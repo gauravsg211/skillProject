@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cyber Group HRMS | Employees</title> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/user_list.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/list.js"></script>
+</head>
+<body style="overflow-y: auto; height:150px; ">
+    
+    <section id="create_user">
+        <div id="_page" class="background_pic overlay">
+            <div class="overlay">
+                <nav class="navbar navbar-default navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" style="line-height:50px;" href="index.html"><img id="brand_logo" style=" margin-top: -10px;" src="https://hrms.cygrp.com/content/images/logo.png" alt="Cyber Group Logo"></a>
+                    </div>
+                        
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="">Users</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="logout.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </nav>
+    
+<!-- *******************//////////////***********         NAVBAR ENDED        *******************//////////////***********   -->
+               
+                <div class="floating_button">
+                    <a  id="createNewUser">    <i id="plus_btn" class="fa fa-plus-circle" style="font-size: 50px; color: orangered;" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="container" style="width:80%;">
+                    <div class="form_container">
+                        <div class=" main_heading row clearfix  col col-lg-12 text-center">LIST OF ALL USERS</div>
+                        <div class="row">
+                            <div class="col col-lg-12"  style="clear:both;">
+                                <input placeholder="Enter Limit"  >
+                                <div class="table-responsive table-hover">          
+                                    <table class="table table-hover table-striped" id="UserListTable">
+                                        <thead>
+                                        <tr>
+                                            <th>Email</th>
+                                            <th>Skills</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                           
+                                        </tbody>
+                                    </table>
+                                    <div id="pagination_nav">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>              

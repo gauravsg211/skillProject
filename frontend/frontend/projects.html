@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Cyber Group HRMS | Projects</title> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>   <!-- select2 css  -->
+        <link rel="stylesheet" href="css/projects.css">
+
+        <link rel="stylesheet" href="css/pagination.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>   <!-- select2 css  -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>             <!-- select2 js -->
+        <script src="js/projects.js"></script>
+
+    </head>
+    <body style="overflow-y: scroll;">
+        <section id="login">
+            <div id="login_page" class="background_pic">
+                <div class="overlay">
+                    <nav class="navbar navbar-default navbar-inverse" role="navigation">
+                        <div class="navbar-header pull-left">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html" style="line-height:50px;"><img id="brand_logo" style="margin-top: -10px;" src="https://hrms.cygrp.com/content/images/logo.png" alt="Cyber Group Logo"></a>
+                        </div>
+
+                        <div class="collapse navbar-collapse  pull-right" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="list.html">Users</a></li>
+                                <li><a href="skills.html">Skills</a></li>
+                                <li class="active"><a href="projects.html">Projects</a></li>
+                                <li><a href="logout.html">Logout</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+
+                    <!-- *******************//////////////***********         NAVBAR ENDED        *******************//////////////***********   -->
+
+
+                    <div class="container">
+                        <div class="row pull-left container" id="left_div" >
+                            <div class="col col-lg-12 main_heading text-center">
+                                PROJECTS LIST
+                            </div>
+                            <div class="col col-lg-12">
+                                <div class="table-responsive table-hover">          
+                                    <table class="table table-hover table-striped" id="ProjectsListTable">
+                                        <thead class="text-center">
+                                            <tr>
+                                                <th class="text-center">Project Name</th>
+                                                <th class="text-center">Start Date</th>
+                                                <th class="text-center">Deadline</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        </tbody>
+                                    </table>
+                                    <div id="pagination_nav">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pull-right" id="right_div">
+                            <div class="container-fluid" style="height:auto;">
+                                <!-- <div class="login_heading text-center">NEW PROJECT</div> -->
+                                <div class="col col-lg-12 main_heading text-center">
+                                    NEW PROJECT
+                                </div>
+
+                                <div class="row" id="new_project_form">
+                                    <div>
+                                        <form action=""> 
+                                            <div class="form-group">
+                                                <label for="ProjectName">Project Name</label>
+                                                <input type="text" class="form-control" id="ProjectName">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="StartDate">Start Date</label>
+                                                <input type="date" class="form-control" id="StartDate">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Deadline">Deadline</label>
+                                                <input type="date" class="form-control" id="Deadline">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Techstack">TechStack</label>
+                                                <select style="width:100%;" id="select2dropdown" class="selectbox" name="" multiple="multiple" >
+
+                                                </select>
+                                            </div>
+                                        </form>
+                                        <button type="button" class="btn btn-success" style="width:100%; margin-bottom: 15px;" id="AddProjectBtn" onclick="addProjectFuncAdmin()" >ADD PROJECT</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

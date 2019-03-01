@@ -1,0 +1,161 @@
+
+ul.navbar-nav{
+    float: right;
+}
+.navbar-default{
+    padding: 10px 40px;
+}
+.navbar-brand{
+    overflow-y: hidden;
+}
+.navbar-header{
+    width: 60%;
+}
+.background_pic{
+    min-height: 100%;
+    background-image: url(https://images.pexels.com/photos/268415/pexels-photo-268415.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+}
+.navbar-default .navbar-nav>li>a{
+    color: white;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    color: black;
+    font-weight: 600;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+.navbar-nav>li{
+    border-radius: 15px;
+}
+.active{
+    background-color: green;
+    color: green;
+}
+
+
+//////////////////////////////////  Navbar code above this point  //////////////////////////////
+
+
+
+.create_your_profile_heading{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.container{
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 20px;
+    max-width: 1000px;
+}
+.container .row{
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+input.form-control{
+    border-color: black;    
+}
+div.form_heading, .main_heading{
+    /* width: 100%; */
+    background-color: #000;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+#brand_logo{
+    height: 40px;
+}
+.main_heading{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: green;    
+}
+.container .row #createNewUser{
+    float: right;
+}
+.container .row #UserListTable{
+    clear: both;
+}
+.floating_button{
+    font-size: 20px;
+    font-weight: 900;
+    position: fixed;
+    top: 40%;
+    z-index: 1000;
+    left: 90%;
+    transition: rotate 0.3s linear;
+    
+}
+/* #message{
+    display: none;
+}
+#createNewUser:hover #message{
+    display: block;
+} */
+#plus_btn{
+    animation: animate 1.5s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(1);
+        color: orangered;
+    }
+    50%{
+        transform: scale(1.5);
+        color: yellow;
+    }
+    100%{
+        transform: scale(1);
+        color: orangered;
+    }
+}
+#profileImage{
+    width: 140px;
+    margin: 0 auto;
+}
+#select2dropdown{
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    #right_div, #left_div{
+        max-width:80%;
+        margin: 0 auto; 
+    }
+    #brand_logo{
+        height: 150%;
+        margin-top: 10px;
+        line-height: 50px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .navbar-header{
+        width: 100%;
+    }
+    #createNewUser{
+        font-size: 80%;
+    }
+    .floating_button{
+        left: 87%;
+    }
+
+}

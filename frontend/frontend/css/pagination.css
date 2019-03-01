@@ -1,0 +1,30 @@
+#container_div{
+    width: 600px;
+    margin: 0 auto;
+}
+#pagination_nav{
+    margin-top: 5px;
+}
+#pagination_nav div {
+    display: inline;
+}
+#pagination_nav div button{
+    height: 30px;
+    width: 30px;
+    /* text-align: center; */
+    border: none;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: green;
+}
+#pagination_nav a{
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
+#pagination_nav div button:hover{
+    background-color: lawngreen;
+}
+#btn_div{
+    display: table-cell;
+}
